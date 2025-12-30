@@ -29,6 +29,10 @@ In plain words
 
 > Maintains a list of objects affected by a business transaction and coordinates the writing out of changes and the resolution of concurrency problems.
 
+Flowchart
+
+![Unit of Work Pattern Flowchart](./etc/unit-of-work-flowchart.png)
+
 ## Programmatic Example of Unit of Work Pattern in Java
 
 Arms dealer has a database containing weapon information. Merchants all over the town are constantly updating this information causing a high load on the database server. To make the load more manageable we apply to Unit of Work pattern to send many small updates in batches.
@@ -180,7 +184,7 @@ Here is the console output.
 
 ## When to Use the Unit Of Work Pattern in Java
 
-* he Unit of Work pattern is ideal for managing multiple database operations in Java that must be executed as a single transaction, ensuring data consistency and integrity.
+* The Unit of Work pattern is ideal for managing multiple database operations in Java that must be executed as a single transaction, ensuring data consistency and integrity.
 * Ideal in scenarios where changes to the business objects must be tracked and saved in a coordinated manner.
 * Useful when working with object-relational mapping (ORM) frameworks in Java such as Hibernate.
 
